@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+
+  mongodb:
+    container_name: mongo
+    image: mongo:5
+    command: mongod 
+    ports:
+      - "27017:27017"
+    networks:
+      - ivanp      
+  mongo-seed:
+    container_name: mongo-seed
+    build: ./mongo-seed
+    links:
+      - mongodb 
+    networks:
+      - ivanp      
+
+  webserver:
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
+
+
+
+
+volumes:  
+  mongodb:
+  mongo-seed:  
+  certbot:
+  web-root:
+    driver: local
+    # driver_opts:
+    #   type: none
+    #   device: /ivanpozdnyakov/Документы/work/index/
+    #   o: bind
+
+networks:
+  ivanp:
+    driver: bridge

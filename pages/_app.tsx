@@ -1,8 +1,18 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import globalStyles from "@styles/global";
+import ErrorBoundary from "@components/errors/ErrorBoundary";
+import Header from "@components/header/header";
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ErrorBoundary>
+      <style jsx global>
+        {globalStyles}
+      </style>
+      <Header />
+      <Component {...pageProps} />
+    </ErrorBoundary>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NEXT_MANUAL_SIG_HANDLE=true next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NEXT_MANUAL_SIG_HANDLE=true next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@types/mongoose": "^5.11.97",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "core-js": "^3.27.1",
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.8.2",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

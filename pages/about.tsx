@@ -1,33 +1,36 @@
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import Layout from "@components/layout";
-import Content from "@components/pages/index";
-import { AppTypes } from "@components/types";
+import Content from "@components/pages/about";
 import { connectDB } from "@utils/connection";
 import { Page } from "@models/page.model";
-export default function IndexPage({
+import { AppTypes } from "@components/types";
+const About: NextPage = ({
   data,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const {
     seo: { title, description },
-    content,
-    projects,
+    about,
+    approach,
+    process,
+    services,
+    dev,
   } = data;
 
   return (
     <Layout title={title} description={description}>
-      <article>
-        <Content {...{ content, projects }} />
+      <article className="container">
+        <Content {...{ about, approach, process, services, dev }} />
       </article>
     </Layout>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   try {
     connectDB();
 
     const page: AppTypes.PageType = await Page.findOne({
-      name: "home",
+      name: "about",
     })
       .select(`data.${ctx.locale} name`)
       .lean();
@@ -42,3 +45,5 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     };
   }
 };
+
+export default About;
