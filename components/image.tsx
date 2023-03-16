@@ -28,14 +28,7 @@ export default function NewImage({
       : window.btoa(str);
 
   return (
-    <div className="custom-image">
-      <style jsx>{`
-        .custom-image {
-          position: relative;
-          width: 100%;
-          height: 100%;
-        }
-      `}</style>
+    <>
       <Image
         style={{ objectFit: "cover" }}
         onLoadingComplete={onLoadingComplete}
@@ -48,6 +41,6 @@ export default function NewImage({
           convertImage(700, 475)
         )}`}
       />
-    </div>
+    </>
   );
 }

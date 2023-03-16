@@ -88,13 +88,14 @@ const Content: React.FC<PageProps> = ({
         }
         .image--1 {
           grid-column: 1/9;
-          height: calc((var(--container-width) * 0.9) / 4 * 3);
+          height: calc(var(--container-width) / 16 * 9);
 
           position: relative;
           grid-row: 3;
         }
         .image--2 {
           grid-column: 3/9;
+
           height: calc((var(--container-width) * 0.6) / 4 * 3);
           position: relative;
           grid-row: 5;
@@ -139,6 +140,16 @@ const Content: React.FC<PageProps> = ({
         .back {
           grid-column: 6/9;
         }
+        @media all and (max-width: 1024px) and (orientation: portrait) {
+          .image--1 {
+            grid-row: 2;
+            height: calc(100vw / 16 * 9);
+          }
+          .image--2 {
+            height: calc(100vw / 16 * 9);
+            grid-column: 1/8;
+          }
+        }
         @media all and (max-width: 600px) and (orientation: portrait) {
           .heading-tmp {
             display: grid;
@@ -154,12 +165,6 @@ const Content: React.FC<PageProps> = ({
           }
           section {
             grid-column: 1/9;
-          }
-          .image--1 {
-            grid-row: 2;
-          }
-          .image--2 {
-            grid-column: 1/8;
           }
         }
       `}</style>

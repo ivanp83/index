@@ -51,8 +51,9 @@ const ProjectItem: FC<Props> = ({ project }) => {
 
         .video {
           grid-column: 1/9;
+          aspect-ratio: 16/9;
           width: 100%;
-          height: calc(${elWidth.current + "px"} / 4 * 3);
+          object-fit: cover;
         }
         .link {
           grid-column: 1/9;
@@ -61,6 +62,12 @@ const ProjectItem: FC<Props> = ({ project }) => {
           margin-top: auto;
           margin-bottom: 5rem;
           display: block;
+        }
+        @media all and (max-width: 1024px) and (orientation: portrait) {
+          .video {
+            margin-bottom: 0;
+            height: calc(100vw / 16 * 9);
+          }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
           .video {
