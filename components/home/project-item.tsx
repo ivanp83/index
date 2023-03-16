@@ -89,6 +89,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
       </div>
       <div className="content">
         <video
+          poster="/images/banner.jpg"
           className="video"
           preload="metadata"
           muted
