@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "me",
+      "script": "npm run start",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "7000"
+      }
+    }
+  ]
+}
