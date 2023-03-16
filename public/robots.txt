@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# test-bot
+User-agent: test-bot
+Allow: /
+
+# Host
+Host: https://ivanp.pw
+
+# Sitemaps
+Sitemap: https://ivanp.pw/sitemap.xml
