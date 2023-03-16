@@ -1,5 +1,5 @@
 import { AppTypes } from "@components/types";
-import React, { FC, useState } from "react";
+import React, { FC, useState, useRef, useEffect } from "react";
 
 type Props = {
   project: AppTypes.ProjectType;
@@ -7,9 +7,15 @@ type Props = {
 
 const ProjectItem: FC<Props> = ({ project }) => {
   const [state, setState] = useState<boolean>(false);
-
+  const ref = useRef<HTMLLIElement>(null);
+  const elWidth = useRef<number>(0);
+  useEffect(() => {
+    if (ref.current) {
+      elWidth.current = ref.current.getBoundingClientRect().width;
+    }
+  }, []);
   return (
-    <li key={project.id} onClick={() => setState(!state)}>
+    <li key={project.id} onClick={() => setState(!state)} ref={ref}>
       <style jsx>{`
         li {
           overflow: hidden;
@@ -46,6 +52,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         .video {
           grid-column: 1/9;
           width: 100%;
+          height: calc(${elWidth.current + "px"} / 4 * 3);
         }
         .link {
           grid-column: 1/9;

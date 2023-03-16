@@ -88,16 +88,18 @@ const Content: React.FC<PageProps> = ({
         }
         .image--1 {
           grid-column: 1/9;
-          aspect-ratio: 1.5/1;
+          height: calc((var(--container-width) * 0.9) / 4 * 3);
+
           position: relative;
           grid-row: 3;
         }
         .image--2 {
           grid-column: 3/9;
-          aspect-ratio: 1.5/1;
+          height: calc((var(--container-width) * 0.6) / 4 * 3);
           position: relative;
           grid-row: 5;
         }
+
         .services {
           display: grid;
           grid-gap: var(--space-small);
