@@ -8,40 +8,47 @@ const LangSwitcher = dynamic(() => import("./lang-switcher"), {
 const Header: React.FC = () => {
   const router = useRouter();
   return (
-    <header>
+    <header className="header container ">
       <style jsx>{`
-        header {
+        .header {
+          padding: var(--space-small);
+          width: var(--container-width);
           position: fixed;
           z-index: 10;
-          right: var(--space-small);
-          top: var(--space-small);
+          top: 0;
+          left: 0;
           display: grid;
           grid-auto-flow: column;
           align-items: baseline;
-          grid-gap: 1rem;
+          grid-column-gap: var(--space-small);
+        }
+        .logo {
+          grid-column: 1/5;
+          font-weight: 700;
+        }
+        nav {
+          grid-column: 6/8;
         }
         .nav-link {
-          border: 1px solid;
-          padding: 0rem 3rem;
-          border-radius: 50px;
           margin: 0 auto;
-          text-transform: uppercase;
-          background: var(--main-light);
+          color: var(--main-dark);
         }
-        @media all and (max-width: 350px) {
-          .nav-link {
-          }
+        main {
+          padding: var(--space-small);
         }
       `}</style>
-      {router.pathname.includes("about") ? (
-        <Link href="/">
-          <span className="nav-link">главная</span>
-        </Link>
-      ) : (
-        <Link href="/about">
-          <span className="nav-link">about</span>
-        </Link>
-      )}
+      <span className="logo">Иван Поздняков</span>
+      <nav>
+        {router.pathname.includes("about") ? (
+          <Link href="/">
+            <span className="nav-link">Index</span>
+          </Link>
+        ) : (
+          <Link href="/about">
+            <span className="nav-link">About</span>
+          </Link>
+        )}
+      </nav>
 
       <LangSwitcher />
     </header>

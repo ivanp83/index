@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import Layout from "@components/layout";
-import Content from "@components/pages/about";
+import Content from "@components/about/content";
 import { connectDB } from "@utils/connection";
 import { Page } from "@models/page.model";
 import { AppTypes } from "@components/types";

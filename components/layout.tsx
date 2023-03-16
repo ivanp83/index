@@ -14,8 +14,7 @@ const Layout = ({ children, title, description }: ILayoutProps) => {
         <title key={title}>{title}</title>
         <meta name="description" content={description} />
       </Head>
-
-      {children}
+      <main> {children}</main>
     </>
   );
 };

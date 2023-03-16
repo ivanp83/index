@@ -5,11 +5,13 @@ export default function LangSwitcher() {
   const router = useRouter();
 
   return (
-    <ul className="list-items">
+    <ul className="lang">
       <style jsx>{`
-        .list-items {
+        .lang {
           display: flex;
           width: fit-content;
+          grid-column: 8/9;
+          justify-self: end;
         }
         li {
           line-height: 1;
@@ -22,7 +24,7 @@ export default function LangSwitcher() {
 
         .nav-link {
           text-decoration: none;
-          color: inherit;
+          color: var(--main-dark);
           position: relative;
         }
 
