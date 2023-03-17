@@ -166,6 +166,12 @@ const Content: React.FC<PageProps> = ({
           section {
             grid-column: 1/9;
           }
+          .front {
+            grid-column: 1/5;
+          }
+          .back {
+            grid-column: 5/9;
+          }
         }
       `}</style>
       <div className="heading-tmp container">
