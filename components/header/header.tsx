@@ -53,7 +53,7 @@ const Header: React.FC = () => {
         ) : (
           <Link href="/about">
             <span className="nav-link">
-              {router.locale === "en" ? "About" : "Информация"}
+              {router.locale === "en" ? "About" : "Кто я"}
             </span>
           </Link>
         )}
