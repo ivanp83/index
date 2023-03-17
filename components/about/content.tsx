@@ -142,10 +142,10 @@ const Content: React.FC<PageProps> = ({
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .image--1 {
             grid-row: 2;
-            height: calc(100vw / 16 * 9);
+            height: calc(100vw / 4 * 3);
           }
           .image--2 {
-            height: calc(100vw / 16 * 9);
+            height: calc(100vw / 4 * 3);
             grid-column: 1/8;
           }
         }
