@@ -52,8 +52,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         .video {
           grid-column: 1/9;
           width: 100%;
-          height: auto;
-          vertical-align: middle;
+          aspect-ratio: 16/9;
           object-fit: cover;
         }
         .link {
@@ -67,9 +66,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .video {
             margin-bottom: 0;
-             {
-              /* height: calc(100vw / 16 * 9 - var(--space-small)); */
-            }
+            height: calc(100vw / 16 * 9 - var(--space-small));
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
@@ -88,15 +85,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         <span className="date">{project.date}</span>
       </div>
       <div className="content">
-        <video
-          loop
-          autoPlay
-          playsInline
-          muted
-          width="100%"
-          height="100%"
-          src={project.video.mp4}
-        ></video>
+        <video loop autoPlay playsInline muted src={project.video.mp4}></video>
         <a href={project.url} className="link">
           {project.url}
         </a>
