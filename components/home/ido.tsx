@@ -24,7 +24,7 @@ const IDo: FC<Props> = ({ ido }) => {
           }
         }
       `}</style>
-      <h2>{ido.title}:</h2>
+      <h2>{ido.title}</h2>
       {ido.data.map((item) => (
         <span key={item}>{item}</span>
       ))}

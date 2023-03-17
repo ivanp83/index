@@ -180,7 +180,7 @@ const Content: React.FC<PageProps> = ({
       </div>
 
       <section className="services">
-        <h2>{services.title}:</h2>
+        <h2>{services.title}</h2>
         <div className="services-text">
           {services.text.map((par: any) => (
             <>{renderServicesText(par)}</>
@@ -188,11 +188,11 @@ const Content: React.FC<PageProps> = ({
         </div>
       </section>
       <section className="approach">
-        <h2>{approach.title}:</h2>
+        <h2>{approach.title}</h2>
         <div>{renderText(approach.content)}</div>
       </section>
       <section className="process">
-        <h2>{process.title}:</h2>
+        <h2>{process.title}</h2>
         <div className="process-text">
           {process.text.map((par: any) => (
             <>{renderServicesText(par)}</>

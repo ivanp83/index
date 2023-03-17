@@ -23,7 +23,7 @@ const Projects: FC<Props> = ({ projects }) => {
           }
         }
       `}</style>
-      <h2>{projects.title}:</h2>
+      <h2>{projects.title}</h2>
       <ul>
         {projects.data.map((project, i) => (
           <ProjectItem project={project} key={i} />

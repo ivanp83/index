@@ -24,7 +24,7 @@ const Contacts: FC<Props> = ({ contacts }) => {
           }
         }
       `}</style>
-      <h2>{contacts.title}:</h2>
+      <h2>{contacts.title}</h2>
       <a href={`mailto:${contacts.email}`}>Email</a>
       <a href={`tg://resolve?domain=<${contacts.telegram}>`}>Telegram</a>
     </section>
