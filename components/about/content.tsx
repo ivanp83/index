@@ -89,7 +89,6 @@ const Content: React.FC<PageProps> = ({
         .image--1 {
           grid-column: 1/9;
           height: calc(var(--container-width) / 4 * 3);
-
           position: relative;
           grid-row: 3;
         }
@@ -140,8 +139,10 @@ const Content: React.FC<PageProps> = ({
           grid-column: 6/9;
         }
         @media all and (max-width: 1024px) and (orientation: portrait) {
-          .image--1 {
+          .about-me {
             grid-row: 2;
+          }
+          .image--1 {
             height: calc(100vw / 4 * 3);
           }
           .image--2 {
@@ -161,6 +162,7 @@ const Content: React.FC<PageProps> = ({
           }
           .about-me {
             grid-column: 1/9;
+            grid-row: 2;
           }
           section {
             grid-column: 1/9;
@@ -170,6 +172,11 @@ const Content: React.FC<PageProps> = ({
           }
           .back {
             grid-column: 5/9;
+          }
+          .about-me {
+          }
+          .image--1 {
+            grid-row: 2;
           }
         }
       `}</style>
