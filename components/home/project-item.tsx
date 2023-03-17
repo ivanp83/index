@@ -85,7 +85,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         <span className="date">{project.date}</span>
       </div>
       <div className="content">
-        <video className="video-background" autoPlay loop muted playsInline>
+        <video className="video" autoPlay loop muted playsInline>
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video>
