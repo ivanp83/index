@@ -4,11 +4,11 @@
     "data": {
       "en": {
         "seo": {
-          "title": "Ivan Pozdnyakov Full-Stack developer NodeJS ReactJS",
+          "title": "Ivan Pozdnyakov Full-Stack developer NodeJS, ReactJS",
           "description": "I strive for simple solutions to complex projects. My work is based on research, successful global experience in the IT industry and a deep understanding of my role as an architect."
         },
         "content": {
-          "title": "Full-Stack developer NodeJS ReactJS",
+          "title": "Full-Stack developer NodeJS, ReactJS",
           "contacts": {
             "title": "Contacts",
             "email": "ivan_151@mail.ru",
@@ -32,7 +32,7 @@
             "data": [
               {
                 "id": 1,
-                "title": "Лора Бровко",
+                "title": "Lora Brovko",
                 "description": "Site for famous fashion designer",
                 "sub": "Identity, UI/UX, site development",
                 "banner": "/images/lbrovko/ban.jpg",
@@ -65,11 +65,11 @@
       },
       "ru": {
         "seo": {
-          "title": "Иван Поздняков Full-Stack разрабочик NodeJS ReactJS",
+          "title": "Иван Поздняков Full-Stack разрабочик NodeJS, ReactJS",
           "description": "Я стремлюсь к простым решениям сложных задачь насколько это вохможно. Моя работа основана на исследованиях, успешном мировом опыте IT индустрии и глубоком понимании своей роли как архитектора."
         },
         "content": {
-          "title": "Full-Stack разрабочик NodeJS ReactJS",
+          "title": "Full-Stack разрабочик NodeJS, ReactJS",
           "contacts": {
             "title": "Мои контакты",
             "email": "ivan_151@mail.ru",
