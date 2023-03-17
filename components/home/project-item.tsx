@@ -97,7 +97,13 @@ const ProjectItem: FC<Props> = ({ project }) => {
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video> */}
-        <video preload="yes" autoPlay loop muted poster="/images/ban.jpg">
+        <video
+          preload="yes"
+          autoPlay
+          loop
+          muted
+          poster="/images/lbrovko/ban.jpg"
+        >
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video>
