@@ -67,7 +67,9 @@ const ProjectItem: FC<Props> = ({ project }) => {
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .video {
             margin-bottom: 0;
-            height: calc(100vw / 16 * 9 - var(--space-small));
+             {
+              /* height: calc(100vw / 16 * 9 - var(--space-small)); */
+            }
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
