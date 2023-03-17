@@ -51,8 +51,9 @@ const ProjectItem: FC<Props> = ({ project }) => {
 
         .video {
           grid-column: 1/9;
-
           width: 100%;
+          height: auto;
+          vertical-align: middle;
           object-fit: cover;
         }
         .link {
