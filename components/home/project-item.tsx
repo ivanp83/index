@@ -66,11 +66,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .video {
             margin-bottom: 0;
-            width: 300px;
-            height: 300px;
-             {
-              /* height: calc(100vw / 16 * 9 - var(--space-small)); */
-            }
+            height: calc(100vw / 16 * 9 - var(--space-small));
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
@@ -90,14 +86,17 @@ const ProjectItem: FC<Props> = ({ project }) => {
       </div>
       <div className="content">
         <video
-          src={project.video.mp4}
+          poster="/images/banner.jpg"
           className="video"
           preload="metadata"
           muted
           playsInline
           autoPlay
           loop
-        ></video>
+        >
+          <source src={project.video.mp4} type="video/mp4" />
+          <source src={project.video.webm} type="video/webm" />
+        </video>
 
         <a href={project.url} className="link">
           {project.url}
