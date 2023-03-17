@@ -201,10 +201,10 @@ const Content: React.FC<PageProps> = ({
       </section>
 
       <div className="image--1">
-        <Image src="/images/me2.jpg" width={400} height={400} alt="фото" />
+        <Image src="/images/me2.jpg" alt="фото" />
       </div>
       <div className="image--2">
-        <Image src={about.image} width={400} height={400} alt="фото" />
+        <Image src={about.image} alt="фото" />
       </div>
 
       <div className="table container">
