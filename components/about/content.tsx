@@ -88,15 +88,14 @@ const Content: React.FC<PageProps> = ({
         }
         .image--1 {
           grid-column: 1/9;
-          height: calc(var(--container-width) / 16 * 9);
+          height: calc(var(--container-width) / 4 * 3);
 
           position: relative;
           grid-row: 3;
         }
         .image--2 {
           grid-column: 3/9;
-
-          height: calc((var(--container-width) * 0.6) / 4 * 3);
+          height: calc((var(--container-width) * 0.7) / 4 * 3);
           position: relative;
           grid-row: 5;
         }
@@ -201,10 +200,10 @@ const Content: React.FC<PageProps> = ({
       </section>
 
       <div className="image--1">
-        <Image src="/images/me2.jpg" alt="фото" />
+        <Image src={about.image} alt="фото" />
       </div>
       <div className="image--2">
-        <Image src={about.image} alt="фото" />
+        <Image src="/images/me2.jpg" alt="фото" />
       </div>
 
       <div className="table container">

@@ -2,8 +2,6 @@ import type { AppProps } from "next/app";
 import globalStyles from "@styles/global";
 import ErrorBoundary from "@components/errors/ErrorBoundary";
 import Header from "@components/header/header";
-
-import { pageview } from "lib/gtag";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as gtag from "@lib/gtag";

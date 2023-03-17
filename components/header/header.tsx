@@ -31,31 +31,19 @@ const Header: React.FC = () => {
         nav {
           grid-column: 6/8;
         }
-        .nav-link {
+        a {
           margin: 0 auto;
           color: var(--main-dark);
         }
-        main {
-          padding: var(--space-small);
-        }
       `}</style>
       <span className="logo">
-        {" "}
         {router.locale === "en" ? "Ivan Pozdnyakov" : "Иван Поздняков"}
       </span>
       <nav>
         {router.pathname.includes("about") ? (
-          <Link href="/">
-            <span className="nav-link">
-              {router.locale === "en" ? "Index" : "Главная"}
-            </span>
-          </Link>
+          <Link href="/">{router.locale === "en" ? "Index" : "Главная"}</Link>
         ) : (
-          <Link href="/about">
-            <span className="nav-link">
-              {router.locale === "en" ? "About" : "Кто я"}
-            </span>
-          </Link>
+          <Link href="/about">About</Link>
         )}
       </nav>
 
