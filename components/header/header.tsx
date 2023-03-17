@@ -39,7 +39,10 @@ const Header: React.FC = () => {
           padding: var(--space-small);
         }
       `}</style>
-      <span className="logo">Иван Поздняков</span>
+      <span className="logo">
+        {" "}
+        {router.locale === "en" ? "Ivan Pozdnyakov" : "Иван Поздняков"}
+      </span>
       <nav>
         {router.pathname.includes("about") ? (
           <Link href="/">
