@@ -2,11 +2,13 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
 const LangSwitcher = dynamic(() => import("./lang-switcher"), {
   ssr: false,
 });
 const Header: React.FC = () => {
   const router = useRouter();
+  const curLocale = router.locale === "en" ? "en" : "ru";
   return (
     <header className="header container ">
       <style jsx>{`
@@ -41,11 +43,15 @@ const Header: React.FC = () => {
       <nav>
         {router.pathname.includes("about") ? (
           <Link href="/">
-            <span className="nav-link">Index</span>
+            <span className="nav-link">
+              {router.locale === "en" ? "Index" : "Главная"}
+            </span>
           </Link>
         ) : (
           <Link href="/about">
-            <span className="nav-link">About</span>
+            <span className="nav-link">
+              {router.locale === "en" ? "About" : "Информация"}
+            </span>
           </Link>
         )}
       </nav>
