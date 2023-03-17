@@ -55,19 +55,22 @@ const ProjectItem: FC<Props> = ({ project }) => {
           width: 100%;
           object-fit: cover;
         }
+        .text-description {
+          grid-column: 1/9;
+
+          margin-bottom: 1rem;
+        }
         .link {
           grid-column: 1/9;
           margin-bottom: var(--space-small);
           text-decoration: underline;
           margin-top: auto;
           margin-bottom: 5rem;
-          display: block;
         }
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .video {
             margin-bottom: 0;
-              height: calc(100vw / 16 * 9 - var(--space-small));
-            }
+            height: calc(100vw / 16 * 9 - var(--space-small));
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
@@ -97,6 +100,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video>
+        <span className="text-description">{project.text}</span>
         <a href={project.url} className="link">
           {project.url}
         </a>
