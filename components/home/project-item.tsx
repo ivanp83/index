@@ -66,8 +66,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .video {
             margin-bottom: 0;
-        
-              /* height: calc(100vw / 16 * 9 - var(--space-small)); */
+              height: calc(100vw / 16 * 9 - var(--space-small));
             }
           }
         }
@@ -98,15 +97,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video> */}
-        <video
-          preload="yes"
-          autoPlay
-          loop
-          muted
-          width="100%"
-          height="auto"
-          poster="https://kartinkin.net/pics/uploads/posts/2022-09/1662787362_48-kartinkin-net-p-malenkie-porodi-koshek-oboi-51.jpg"
-        >
+        <video preload="yes" autoPlay loop muted poster="/images/ban.jpg">
           <source src={project.video.mp4} type="video/mp4" />
           <source src={project.video.webm} type="video/webm" />
         </video>
