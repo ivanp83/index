@@ -89,6 +89,8 @@ const ProjectItem: FC<Props> = ({ project }) => {
         <video
           loop
           autoPlay
+          playsInline
+          muted
           width="100%"
           height="100%"
           src={project.video.mp4}
