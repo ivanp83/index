@@ -51,10 +51,8 @@ const ProjectItem: FC<Props> = ({ project }) => {
 
         .video {
           grid-column: 1/9;
+          aspect-ratio: 16/9;
           width: 100%;
-          height: calc(
-            (var(--container-width) * 0.9) / 16 * 9 - var(--space-small)
-          );
           object-fit: cover;
         }
         .link {
@@ -72,9 +70,6 @@ const ProjectItem: FC<Props> = ({ project }) => {
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
-          .video {
-            margin-bottom: 0;
-          }
           .date {
             display: none;
           }
@@ -91,38 +86,14 @@ const ProjectItem: FC<Props> = ({ project }) => {
       </div>
       <div className="content">
         <video
-          poster="/images/banner.jpg"
+          src={project.video.mp4}
           className="video"
           preload="metadata"
           muted
           playsInline
           autoPlay
           loop
-        >
-          <source src={project.video.mp4} type="video/mp4" />
-          <source src={project.video.webm} type="video/webm" />
-          <source
-            src="video/tears-of-steel-battle-clip-medium.ogg"
-            type="video/ogg"
-          />
-          <object
-            type="application/x-shockwave-flash"
-            data={`flash-player.swf?videoUrl=${project.video.mp4}`}
-            width="1024"
-            height="576"
-          >
-            <param
-              name="movie"
-              value={`flash-player.swf?videoUrl=${project.video.mp4}`}
-            />
-            <param name="allowfullscreen" value="true" />
-            <param name="wmode" value="transparent" />
-            <param
-              name="flashvars"
-              value={`controlbar=over&amp;image=img/banner.jpg&amp;file=flash-player.swf?videoUrl=${project.video.mp4}`}
-            />
-          </object>
-        </video>
+        ></video>
 
         <a href={project.url} className="link">
           {project.url}
