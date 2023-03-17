@@ -135,7 +135,7 @@ const Content: React.FC<PageProps> = ({
           margin-bottom: 1.6rem;
         }
         .front {
-          grid-column: 1/6;
+          grid-column: 3/6;
         }
         .back {
           grid-column: 6/9;
