@@ -51,7 +51,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
 
         .video {
           grid-column: 1/9;
-          aspect-ratio: 16/9;
+
           width: 100%;
           object-fit: cover;
         }
@@ -86,14 +86,12 @@ const ProjectItem: FC<Props> = ({ project }) => {
       </div>
       <div className="content">
         <video
-          className="video"
-          autoPlay
           loop
-          muted
-          playsInline
+          autoPlay
+          width="100%"
+          height="100%"
           src={project.video.mp4}
         ></video>
-
         <a href={project.url} className="link">
           {project.url}
         </a>
