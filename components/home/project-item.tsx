@@ -98,7 +98,6 @@ const ProjectItem: FC<Props> = ({ project }) => {
           poster={project.banner}
         >
           <source src={project.video.mp4} type="video/mp4" />
-          <source src={project.video.webm} type="video/webm" />
         </video>
         <span className="text-description">{project.text}</span>
         <a href={project.url} className="link">

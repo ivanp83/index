@@ -32,6 +32,19 @@
             "data": [
               {
                 "id": 1,
+                "title": "Anna curreri",
+                "description": "Site for SMM specialist",
+                "sub": "Development",
+                "banner": "/images/acurreri/ban.jpg",
+                "text": "Anna is a very versatile person. Engaged in promotion on social networks. In general, she is a certified linguist in her main specialty and is fluent in English, German, and Italian. For 10 years, she managed her own network of linguistic schools, starting this business as one of the first Kalininrad.",
+                "url": "https://annacurreri.ru",
+                "date": "2023",
+                "video": {
+                  "mp4": "/images/acurreri/1.mp4"
+                }
+              },
+              {
+                "id": 2,
                 "title": "Lora Brovko",
                 "description": "Site for famous fashion designer",
                 "sub": "Identity, UI/UX, site development",
@@ -46,7 +59,7 @@
               },
 
               {
-                "id": 2,
+                "id": 3,
                 "title": "Rost Foods",
                 "description": "Site for production company",
                 "sub": "Identity, UI/UX, site development",
@@ -93,6 +106,19 @@
             "data": [
               {
                 "id": 1,
+                "title": "Анна Куррери",
+                "description": "Сайт для дизайнера SMM маркетолога",
+                "sub": "Разработка сайта",
+                "banner": "/images/acurreri/ban.jpg",
+                "text": "Анна очень разносторонний человек. Занимаетя продвижением в социальных сетях. А вообще, по своей основной специальности она дипломированный лингвист и свободно владеет английским, немецким, итальянским. В течение 10 лет руководила собственной сетью лингвистических школ, начав этот бизнес одной из первых Калининраде.",
+                "url": "https://annacurreri.ru",
+                "date": "2023",
+                "video": {
+                  "mp4": "/images/acurreri/1.mp4"
+                }
+              },
+              {
+                "id": 2,
                 "title": "Лора Бровко",
                 "description": "Сайт для дизайнера одежды",
                 "sub": "Айдентика, UI/UX, разработка сайта",
@@ -101,13 +127,12 @@
                 "url": "https://lorabrovko.com",
                 "date": "2022",
                 "video": {
-                  "mp4": "/images/lbrovko/1.mp4",
-                  "webm": "/images/lbrovko/1.webm"
+                  "mp4": "/images/lbrovko/1.mp4"
                 }
               },
 
               {
-                "id": 2,
+                "id": 3,
                 "title": "Рост Фудс",
                 "description": "Cайт для производственной компании",
                 "sub": "Айдентика, UI/UX, разработка сайта",
@@ -116,8 +141,7 @@
                 "text": "Компания Рост Фудс производит пеллеты для снеков и чипсов различной формы и рецептуры и поставляет продукцию для предприятий в 9 странах.",
                 "date": "2021",
                 "video": {
-                  "mp4": "/images/snack/1.mp4",
-                  "webm": "/images/snack/1.webm"
+                  "mp4": "/images/snack/1.mp4"
                 }
               }
             ]
@@ -138,7 +162,7 @@
         "about": {
           "title": "Digital products for everyone",
           "image": "/images/me.jpg",
-          "text": "Hi there! My name is Ivan and I am a full-stack developer and graphic designer. Friends, we are living in an amazing word of information technology and huge number of offers from different companies to create IT services. But there is one big problem —  the price for common people or a small company is simply unaffordable. I believe money-making should not create barriers to access to quality things. Working independently, I am as focused as it's possible on each project. I don't have to share profits with contractors and think about building internal processes within the company. Many years of experience in working with a business has given me all the appropriate knowledge and skills. All this allows me to do studio-quality projects for you for sane money."
+          "text": "Dear friend, I am happy to see you on my website! I think you are looking for implementer of your business idea related to IT. This is not surprising, because we are living in information and technology word where things are correspond to high technology. But there is essential problem —  contract implementation price  often unaffordable. I believe that profit-making should not create barriers to access to quality things. Being work independently, I can be as focused as it's possible on each project. I don't have to share profits with contractors and thinking about handle internal processes within the company. Many years of experience in working with a business has given me all the appropriate knowledge. This allows me to do studio-quality projects for you for fair price. Therefore, do not hesitate and email or telegram me by contacts as soon as possible. I will make a project for the budget available to you."
         },
         "approach": {
           "title": "Approach",
@@ -199,7 +223,7 @@
         "about": {
           "title": "Цифровые продукты для каждого",
           "image": "/images/me.jpg",
-          "text": "Меня зовут Иван и я full-stack разработчик и дизайнер интерфейсов. Друзья, мы живём в удивительное время информационных технологий и разные компании предлагают свои услуги по созданию IT сервисов от. Но есть одна большая проблема — зачастую цена для обычного человека или небольшой компании просто неподъемная. Я считаю, что извлечение прибыли не должно создавать барьеры для доступа к качественным вещам. Работая самостоятельно, я максимально сконцентрирован на каждом проекте. Мне не надо делиться прибылью с подрядчикам и думать о построении внутренних процессов внутри компании. Многолетний опыт работы в с бизнесом дал мне все необходимые знания. Всё это позволяет мне делать для вас проекты студийного качества за вменяемые деньги."
+          "text": "Дорогой друг, рад видеть тебя на своём сайте! Полагаю, ты находишься в поиске исполнителя своего проекта мечты или бизнес идеи, связанной с IT. Это не удивительно, ведь мы живём во время информационных технологий и сегодня всё связанно с высокими технологиями.  Но есть главная проблема — зачастую стоимость организации сервиса просто неподъемная. Я считаю, что извлечение прибыли не должно создавать барьеры для доступа к качественным вещам. Работая самостоятельно, я могу быть максимально сконцентрирован на каждом проекте. Мне не надо делиться прибылью с подрядчикам и думать о построении внутренних процессов внутри компании. Многолетний опыт работы в с бизнесом дал мне все необходимые знания. Всё это позволяет мне делать для вас проекты студийного качества за вменяемые деньги. Поэтому, не стесняйся и пиши мне по контактам скорее. Я сделаю  проект за доступный тебе бюджет."
         },
         "approach": {
           "title": "Подход",

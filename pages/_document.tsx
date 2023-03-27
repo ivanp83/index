@@ -8,7 +8,24 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="yandex-verification" content="9eb0983f5a804ccc" />
-
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/icon/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/icon/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/icon/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
           {isProduction && (
             <>
               <script
