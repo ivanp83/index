@@ -32,6 +32,7 @@ export default css.global`
     background: var(--main-light);
     color: var(--main-dark);
     font-family: "GolosTextReg", sans-serif;
+    font-size: 16px;
   }
 
   a {
@@ -39,9 +40,6 @@ export default css.global`
     text-decoration: none;
   }
 
-  body {
-    font-size: 16px;
-  }
   main {
     width: var(--container-width);
   }
@@ -51,7 +49,8 @@ export default css.global`
   }
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-size: 16px;
     font-family: "GolosTextReg", sans-serif;
   }
@@ -68,6 +67,16 @@ export default css.global`
   @media all and (max-width: 1024px) and (orientation: portrait) {
     :root {
       --container-width: 100%;
+    }
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1025px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1025px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1025px),
+    only screen and (min-device-pixel-ratio: 2) and (max-width: 1025px),
+    only screen and (min-resolution: 192dpi) and (max-width: 1025px),
+    only screen and (min-resolution: 2dppx) and (max-width: 1025px) {
+    body {
+      font-size: 16px;
     }
   }
 `;
