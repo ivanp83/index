@@ -33,6 +33,7 @@ export default css.global`
     color: var(--main-dark);
     font-family: "GolosTextReg", sans-serif;
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
   }
 
   a {
