@@ -20,7 +20,7 @@ export default css.global`
     --main-f-f: "Manrope-Regular";
     --space-mic: 1rem;
     --space-small: 2rem;
-    --space-med: 5rem;
+    --space-med: 3rem;
     --space-big: 8rem;
     --container-width: 1000px;
   }

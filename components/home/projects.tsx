@@ -14,7 +14,6 @@ const Projects: FC<Props> = ({ projects }) => {
           grid-column: 3/9;
         }
         h2 {
-          margin-bottom: var(--space-small);
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
           .projects {
