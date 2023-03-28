@@ -22,13 +22,14 @@ export default function LangSwitcher() {
           border-right: 1px solid;
         }
 
-        .nav-link {
+        .nav-link-text {
+          font-size: 16px;
           text-decoration: none;
           color: var(--main-dark);
           position: relative;
         }
 
-        .nav-link.active {
+        .nav-link-text.active {
           opacity: 0.5;
         }
       `}</style>
@@ -36,7 +37,9 @@ export default function LangSwitcher() {
         <li key={locale}>
           <Link href={router.asPath} locale={locale}>
             <span
-              className={`nav-link ${router.locale === locale && "active"}`}
+              className={`nav-link-text ${
+                router.locale === locale && "active"
+              }`}
             >
               {locale}
             </span>

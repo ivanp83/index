@@ -8,7 +8,7 @@ const LangSwitcher = dynamic(() => import("./lang-switcher"), {
 });
 const Header: React.FC = () => {
   const router = useRouter();
-  const curLocale = router.locale === "en" ? "en" : "ru";
+
   return (
     <header className="header container ">
       <style jsx>{`
@@ -35,15 +35,22 @@ const Header: React.FC = () => {
           margin: 0 auto;
           color: var(--main-dark);
         }
+        .nav-link-text {
+          font-size: 16px;
+        }
       `}</style>
       <span className="logo">
         {router.locale === "en" ? "Ivan Pozdnyakov" : "Иван Поздняков"}
       </span>
       <nav>
         {router.pathname.includes("about") ? (
-          <Link href="/">{router.locale === "en" ? "Index" : "Главная"}</Link>
+          <Link href="/">
+            <span>{router.locale === "en" ? "Index" : "Главная"}</span>
+          </Link>
         ) : (
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <span className="nav-link-text">About</span>
+          </Link>
         )}
       </nav>
 

@@ -143,6 +143,10 @@ const Content: React.FC<PageProps> = ({
         .back {
           grid-column: 6/9;
         }
+        .back span {
+          display: block;
+          font-size: 16px;
+        }
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .about-me {
             grid-row: 2;
@@ -268,9 +272,7 @@ const Content: React.FC<PageProps> = ({
         <div className="back">
           <h3>Backend</h3>
           {dev.back.map((item: any) => (
-            <div key={item}>
-              <span>{item}</span>
-            </div>
+            <span key={item}>{item}</span>
           ))}
         </div>
       </div>

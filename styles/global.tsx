@@ -41,7 +41,7 @@ export default css.global`
   }
 
   body {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 300;
   }
   main {
@@ -54,7 +54,7 @@ export default css.global`
   h1,
   h2,
   h3 {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 300;
   }
   h2 {
