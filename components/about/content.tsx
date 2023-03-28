@@ -163,7 +163,7 @@ const Content: React.FC<PageProps> = ({
           .heading-tmp {
             display: grid;
             grid-column: 1/9;
-            margin-top: 7rem;
+            margin-top: 4rem;
             grid-gap: var(--space-small);
           }
           h1 {

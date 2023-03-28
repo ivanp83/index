@@ -2,6 +2,14 @@
 /* Font Golos Text: Copyright ? ParaType, 2018. All rights reserved.*/
 
 @font-face {
+  font-family: "GolosText";
+  src: url("Golos-Text_VF.woff2") format("woff2"),
+    url("Golos-Text_VF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "GolosTextReg";
   src: url("golos-text_regular.woff2") format("woff2"),
     url("golos-text_regular.woff") format("woff");

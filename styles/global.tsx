@@ -31,7 +31,7 @@ export default css.global`
     margin: 0;
     background: var(--main-light);
     color: var(--main-dark);
-    font-family: "GolosTextReg", sans-serif;
+    font-family: "GolosText", sans-serif;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
   }
@@ -68,16 +68,6 @@ export default css.global`
   @media all and (max-width: 1024px) and (orientation: portrait) {
     :root {
       --container-width: 100%;
-    }
-  }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1025px),
-    only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1025px),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1025px),
-    only screen and (min-device-pixel-ratio: 2) and (max-width: 1025px),
-    only screen and (min-resolution: 192dpi) and (max-width: 1025px),
-    only screen and (min-resolution: 2dppx) and (max-width: 1025px) {
-    body {
-      font-size: 16px;
     }
   }
 `;

@@ -33,7 +33,7 @@ const Content: React.FC<IndexProps> = ({ content }) => {
           }
           h1 {
             grid-column: 1/5;
-            margin-top: 7rem;
+            margin-top: 4rem;
           }
         }
       `}</style>
