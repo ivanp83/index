@@ -42,7 +42,7 @@ export default css.global`
 
   body {
     font-size: 16px;
-    font-weight: 300;
+    font-family: "GolosTextReg", sans-serif;
   }
   main {
     width: var(--container-width);
@@ -55,7 +55,7 @@ export default css.global`
   h2,
   h3 {
     font-size: 16px;
-    font-weight: 300;
+    font-family: "GolosTextReg", sans-serif;
   }
   h2 {
     color: var(--main-gray);

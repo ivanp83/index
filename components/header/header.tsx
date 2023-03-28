@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         }
         .logo {
           grid-column: 1/5;
-          font-weight: 700;
+          font-family: "GolosTextBold", sans-serif;
         }
         nav {
           grid-column: 6/8;

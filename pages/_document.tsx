@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link href="/fonts/style.css" rel="stylesheet" />
           <meta name="yandex-verification" content="9eb0983f5a804ccc" />
           <link
             rel="apple-touch-icon"

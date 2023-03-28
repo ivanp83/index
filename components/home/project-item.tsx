@@ -20,7 +20,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         li {
           overflow: hidden;
           padding-top: var(--space-small);
-          border-bottom: 1px solid;
+          border-bottom: 1px solid gray;
           display: grid;
         }
         .heading {
