@@ -11,7 +11,7 @@ type TextBlock = {
 };
 type Approach = {
   title: string;
-  content: { title: string; content: Array<string> };
+  content: Array<string>;
 };
 type Process = {
   title: string;
@@ -44,23 +44,12 @@ const Content: React.FC<PageProps> = ({
 }) => {
   const renderText = (data: any) => (
     <p className="par">
-      {data.map((item: any) => (
-        <span key={item}>{item}</span>
+      {data.map((item: any, i: number) => (
+        <span key={i}>{item}</span>
       ))}
     </p>
   );
-  const renderServicesText = (data: any) => {
-    return (
-      <div className="services-text-block">
-        <h3>{data.title}</h3>
-        <p>
-          {data.content.map((item: any) => (
-            <span key={item}>{item}</span>
-          ))}
-        </p>
-      </div>
-    );
-  };
+
   return (
     <article className="about container">
       <style jsx>{`
@@ -81,29 +70,45 @@ const Content: React.FC<PageProps> = ({
         }
 
         .about-me {
+          grid-column: 1/9;
+          display: grid;
+          grid-gap: var(--space-small);
+          grid-auto-flow: row;
+        }
+        .about-me p {
           grid-column: 3/9;
+          display: grid;
+          grid-gap: var(--space-small);
+          grid-auto-flow: row;
         }
         .par {
           display: grid;
         }
         .image--1 {
           grid-column: 1/9;
-          height: calc(var(--container-width) / 4 * 3);
+          height: calc((var(--container-width) * 0.9) / 4 * 3);
           position: relative;
-          grid-row: 3;
-        }
-        .image--2 {
-          grid-column: 3/9;
-          height: calc((var(--container-width) * 0.7) / 4 * 3);
-          position: relative;
-          grid-row: 5;
+          grid-row: 2;
         }
 
         .services {
+          grid-column: 3/9;
           display: grid;
           grid-gap: var(--space-small);
+          grid-auto-flow: row;
         }
-
+        .services .top {
+          display: grid;
+          grid-column: 1/9;
+          grid-gap: var(--space-small);
+          grid-auto-flow: row;
+        }
+        .image--2 {
+          grid-column: 1/9;
+          height: calc((var(--container-width) * 0.7) / 4 * 3);
+          position: relative;
+          grid-row: 2;
+        }
         .services-text {
           display: grid;
           grid-row-gap: var(--space-small);
@@ -143,11 +148,11 @@ const Content: React.FC<PageProps> = ({
             grid-row: 2;
           }
           .image--1 {
-            height: calc(100vw / 4 * 3);
+            height: calc((100vw * 0.7) / 4 * 3);
           }
           .image--2 {
-            height: calc(100vw / 4 * 3);
-            grid-column: 1/8;
+            height: calc((100vw * 0.7) / 4 * 3);
+            grid-column: 1/9;
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
@@ -161,10 +166,18 @@ const Content: React.FC<PageProps> = ({
             grid-column: 1/5;
           }
           .about-me {
-            grid-column: 1/9;
             grid-row: 2;
           }
+          .about-me p {
+            grid-column: 1/9;
+            display: grid;
+            grid-gap: var(--space-small);
+            grid-auto-flow: row;
+          }
           section {
+            grid-column: 1/9;
+          }
+          .services {
             grid-column: 1/9;
           }
           .front {
@@ -173,45 +186,75 @@ const Content: React.FC<PageProps> = ({
           .back {
             grid-column: 5/9;
           }
-          .about-me {
-          }
+
           .image--1 {
-            grid-row: 2;
+            height: calc(100vw / 4 * 3);
+          }
+          .image--2 {
+            height: calc(100vw / 4 * 3);
+            grid-column: 1/9;
           }
         }
       `}</style>
       <div className="heading-tmp container">
         <h1>{about.title}</h1>
-        <div className="about-me">{about.text}</div>
+        <div className="about-me container">
+          <p>{about.text}</p>
+          <div className="image--1">
+            <Image src={about.image} alt="фото" />
+          </div>
+        </div>
       </div>
 
       <section className="services">
-        <h2>{services.title}</h2>
-        <div className="services-text">
-          {services.text.map((par: any) => (
-            <>{renderServicesText(par)}</>
-          ))}
+        <div className="top">
+          <h2>{services.title}</h2>
+          <div className="services-text">
+            {services.text.map((par: any) => (
+              <div className="services-text-block" key={par}>
+                <h3>{par.title}</h3>
+                <p>
+                  {par.content.map((item: any) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="image--2">
+          <Image
+            src="/images/me2.jpg"
+            alt="фото"
+            style={{ objectPosition: "top" }}
+          />
         </div>
       </section>
       <section className="approach">
         <h2>{approach.title}</h2>
-        <div>{renderText(approach.content)}</div>
+
+        <p className="par">
+          {approach.content.map((item: any, i: number) => (
+            <span key={i}>{item}</span>
+          ))}
+        </p>
       </section>
       <section className="process">
         <h2>{process.title}</h2>
         <div className="process-text">
           {process.text.map((par: any) => (
-            <>{renderServicesText(par)}</>
+            <div className="services-text-block" key={par}>
+              <h3>{par.title}</h3>
+              <p>
+                {par.content.map((item: any) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </p>
+            </div>
           ))}
         </div>
       </section>
-
-      <div className="image--1">
-        <Image src={about.image} alt="фото" />
-      </div>
-      <div className="image--2">
-        <Image src="/images/me2.jpg" alt="фото" />
-      </div>
 
       <div className="table container">
         <div className="front">

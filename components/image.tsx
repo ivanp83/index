@@ -30,7 +30,7 @@ export default function NewImage({
   return (
     <>
       <Image
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: "top" }}
         onLoadingComplete={onLoadingComplete}
         src={src}
         alt={alt}
