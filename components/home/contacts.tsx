@@ -25,8 +25,20 @@ const Contacts: FC<Props> = ({ contacts }) => {
         }
       `}</style>
       <h2>{contacts.title}</h2>
-      <Link href={`mailto:${contacts.email}`}>Email</Link>
-      <Link href={`https://t.me/${contacts.telegram}`}>Telegram</Link>
+      <Link
+        href={`mailto:${contacts.email}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Email
+      </Link>
+      <Link
+        href={`https://t.me/${contacts.telegram}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Telegram
+      </Link>
     </section>
   );
 };
