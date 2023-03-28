@@ -31,7 +31,9 @@ export default css.global`
     margin: 0;
     background: var(--main-light);
     color: var(--main-dark);
-    font-family: "GolosText", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Inter,
+      Roboto, Arial, Ubuntu, sans-serif;
+    font-weight: 300;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
   }
@@ -53,7 +55,7 @@ export default css.global`
   h3,
   h4 {
     font-size: 16px;
-    font-family: "GolosTextReg", sans-serif;
+    font-weight: 300;
   }
   h2 {
     color: var(--main-gray);
