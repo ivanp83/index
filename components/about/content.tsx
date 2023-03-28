@@ -57,7 +57,7 @@ const Content: React.FC<PageProps> = ({
           grid-column: 1/9;
           grid-column-gap: var(--space-small);
           grid-row-gap: var(--space-med);
-          padding: var(--space-small);
+          padding: var(--space-small) var(--space-small) var(--space-big);
         }
         .heading-tmp {
           display: contents;

@@ -19,7 +19,7 @@ const Content: React.FC<IndexProps> = ({ content }) => {
       <style jsx>{`
         .home {
           grid-row-gap: var(--space-med);
-          padding: var(--space-small);
+          padding: var(--space-small) var(--space-small) var(--space-big);
         }
 
         h1 {

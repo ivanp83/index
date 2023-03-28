@@ -18,11 +18,10 @@ export default css.global`
     --main-dark: #000;
     --main-gray: #7f7f82;
     --main-f-f: "Manrope-Regular";
-    --title-fs: calc(var(--index) * 15);
     --space-mic: 1rem;
     --space-small: 2rem;
     --space-med: 5rem;
-    --space-big: 15vh;
+    --space-big: 8rem;
     --container-width: 1000px;
   }
 
