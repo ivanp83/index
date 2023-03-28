@@ -6,7 +6,7 @@ type Props = {
 };
 
 const ProjectItem: FC<Props> = ({ project }) => {
-  const [state, setState] = useState<boolean>(false);
+  const [state, setState] = useState<boolean>(true);
   const ref = useRef<HTMLLIElement>(null);
   const elWidth = useRef<number>(0);
   useEffect(() => {
@@ -15,7 +15,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
     }
   }, []);
   return (
-    <li key={project.id} onClick={() => setState(!state)} ref={ref}>
+    <li key={project.id} ref={ref}>
       <style jsx>{`
         li {
           overflow: hidden;
