@@ -31,8 +31,7 @@ export default css.global`
     margin: 0;
     background: var(--main-light);
     color: var(--main-dark);
-    font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica Neue,
-      sans-serif;
+    font-family: "GolosTextReg", sans-serif;
   }
 
   a {
@@ -42,7 +41,6 @@ export default css.global`
 
   body {
     font-size: 16px;
-    font-family: "GolosTextReg", sans-serif;
   }
   main {
     width: var(--container-width);
