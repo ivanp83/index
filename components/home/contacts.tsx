@@ -1,10 +1,10 @@
+import Link from "next/link";
 import React, { FC } from "react";
 
 import { AppTypes } from "../types";
 type Props = { contacts: AppTypes.ContactsType };
 
 const Contacts: FC<Props> = ({ contacts }) => {
-  console.log(contacts);
   return (
     <section className="contacts">
       <style jsx>{`
@@ -25,8 +25,8 @@ const Contacts: FC<Props> = ({ contacts }) => {
         }
       `}</style>
       <h2>{contacts.title}</h2>
-      <a href={`mailto:${contacts.email}`}>Email</a>
-      <a href={`tg://resolve?domain=<${contacts.telegram}>`}>Telegram</a>
+      <Link href={`mailto:${contacts.email}`}>Email</Link>
+      <Link href={`https://t.me/${contacts.telegram}`}>Telegram</Link>
     </section>
   );
 };

@@ -100,7 +100,12 @@ const ProjectItem: FC<Props> = ({ project }) => {
           <source src={project.video.mp4} type="video/mp4" />
         </video>
         <span className="text-description">{project.text}</span>
-        <a href={project.url} className="link">
+        <a
+          href={project.url}
+          className="link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {project.url}
         </a>
       </div>
