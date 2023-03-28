@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { FC } from "react";
 
 import { AppTypes } from "../types";
@@ -25,20 +24,20 @@ const Contacts: FC<Props> = ({ contacts }) => {
         }
       `}</style>
       <h2>{contacts.title}</h2>
-      <Link
+      <a
         href={`mailto:${contacts.email}`}
         target="_blank"
         rel="noopener noreferrer"
       >
         Email
-      </Link>
-      <Link
+      </a>
+      <a
         href={`https://t.me/${contacts.telegram}`}
         target="_blank"
         rel="noopener noreferrer"
       >
         Telegram
-      </Link>
+      </a>
     </section>
   );
 };
