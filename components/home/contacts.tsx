@@ -38,6 +38,13 @@ const Contacts: FC<Props> = ({ contacts }) => {
       >
         Telegram
       </a>
+      <a
+        href={`viber://chat?number=%2B${contacts.viber}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Viber
+      </a>
     </section>
   );
 };

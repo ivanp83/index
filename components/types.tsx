@@ -17,7 +17,7 @@ export namespace AppTypes {
       webm: string;
     };
   };
-  export type ContactsData = "title" | "email" | "telegram";
+  export type ContactsData = "title" | "email" | "telegram" | "viber";
 
   export type ContactsType = Record<ContactsData, string>;
   export type IDoType = { title: string; data: Array<string> };

@@ -188,7 +188,7 @@ const Content: React.FC<PageProps> = ({
       <section className="approach">
         <h2>{approach.title}</h2>
 
-        <p className="par">{approach.text}</p>
+        <span className="par">{approach.text}</span>
       </section>
 
       <div className="table container">

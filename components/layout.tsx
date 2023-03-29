@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "./footer";
 
 interface ILayoutProps {
   children: React.ReactNode | React.ReactNode[];
@@ -15,6 +16,7 @@ const Layout = ({ children, title, description }: ILayoutProps) => {
         <meta name="description" content={description} />
       </Head>
       <main> {children}</main>
+      <Footer />
     </>
   );
 };

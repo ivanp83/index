@@ -21,7 +21,7 @@ export default css.global`
     --space-mic: 1rem;
     --space-small: 2rem;
     --space-med: 3rem;
-    --space-big: 8rem;
+    --space-big: 5rem;
     --container-width: 1000px;
   }
 
