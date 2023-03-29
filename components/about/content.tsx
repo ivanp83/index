@@ -11,11 +11,11 @@ type TextBlock = {
 };
 type Approach = {
   title: string;
-  content: Array<string>;
+  text: string;
 };
 type Process = {
   title: string;
-  text: Array<TextBlock>;
+  text: string;
 };
 type Services = {
   title: string;
@@ -72,7 +72,7 @@ const Content: React.FC<PageProps> = ({
         .about-me {
           grid-column: 1/9;
           display: grid;
-          grid-gap: var(--space-small);
+          grid-gap: 1rem;
           grid-auto-flow: row;
         }
         .about-me p {
@@ -81,61 +81,34 @@ const Content: React.FC<PageProps> = ({
           grid-gap: var(--space-small);
           grid-auto-flow: row;
         }
-        .par {
-          display: grid;
-        }
-        .image--1 {
-          grid-column: 1/9;
-          height: calc((var(--container-width) * 0.9) / 4 * 3);
+
+        .image {
+          grid-column: 3/9;
+          height: calc((var(--container-width) * 0.7) / 16 * 9);
           position: relative;
           grid-row: 2;
         }
 
-        .services {
+        .services,
+        .process,
+        .approach {
           grid-column: 3/9;
           display: grid;
-          grid-gap: var(--space-small);
+          grid-row-gap: 1rem;
           grid-auto-flow: row;
         }
-        .services .top {
-          display: grid;
-          grid-column: 1/9;
-          grid-gap: var(--space-small);
-          grid-auto-flow: row;
-        }
-        .image--2 {
-          grid-column: 1/9;
-          height: calc((var(--container-width) * 0.7) / 4 * 3);
-          position: relative;
-          grid-row: 2;
-        }
-        .services-text {
-          display: grid;
-          grid-row-gap: var(--space-small);
-        }
-        .approach {
-          display: grid;
-          grid-gap: var(--space-small);
-        }
-        .approach-text {
-          display: grid;
-          grid-gap: var(--space-small);
-        }
-        .process {
-          display: grid;
-          grid-row-gap: var(--space-small);
-        }
+        .services-text,
+        .approach-text,
         .process-text {
           display: grid;
-          grid-row-gap: var(--space-small);
+          grid-row-gap: 1rem;
         }
-
         .table {
           grid-column: 1/9;
         }
         .table h3 {
           border-bottom: 1px solid;
-          margin-bottom: 1.6rem;
+          margin-bottom: 1rem;
         }
         .front {
           grid-column: 3/6;
@@ -147,16 +120,13 @@ const Content: React.FC<PageProps> = ({
           display: block;
           font-size: 16px;
         }
+
         @media all and (max-width: 1024px) and (orientation: portrait) {
           .about-me {
             grid-row: 2;
           }
-          .image--1 {
+          .image {
             height: calc((100vw * 0.7) / 4 * 3);
-          }
-          .image--2 {
-            height: calc((100vw * 0.7) / 4 * 3);
-            grid-column: 1/9;
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
@@ -172,16 +142,11 @@ const Content: React.FC<PageProps> = ({
           .about-me {
             grid-row: 2;
           }
-          .about-me p {
-            grid-column: 1/9;
-            display: grid;
-            grid-gap: var(--space-small);
-            grid-auto-flow: row;
-          }
-          section {
-            grid-column: 1/9;
-          }
-          .services {
+
+          .about-me p,
+          .services,
+          .process,
+          .approach {
             grid-column: 1/9;
           }
           .front {
@@ -191,12 +156,9 @@ const Content: React.FC<PageProps> = ({
             grid-column: 5/9;
           }
 
-          .image--1 {
-            height: calc(100vw / 4 * 3);
-          }
-          .image--2 {
-            height: calc(100vw / 4 * 3);
+          .image {
             grid-column: 1/9;
+            height: calc(100vw / 4 * 3);
           }
         }
       `}</style>
@@ -204,60 +166,29 @@ const Content: React.FC<PageProps> = ({
         <h1>{about.title}</h1>
         <div className="about-me container">
           <p>{about.text}</p>
-          <div className="image--1">
+          <div className="image">
             <Image src={about.image} alt="фото" />
           </div>
         </div>
       </div>
 
       <section className="services">
-        <div className="top">
-          <h2>{services.title}</h2>
-          <div className="services-text">
-            {services.text.map((par: any) => (
-              <div className="services-text-block" key={par}>
-                <h3>{par.title}</h3>
-                <p>
-                  {par.content.map((item: any) => (
-                    <span key={item}>{item}</span>
-                  ))}
-                </p>
-              </div>
-            ))}
-          </div>
+        <h2>{services.title}</h2>
+        <div className="services-text">
+          {services.text.map((par: any) => (
+            <span key={par}>{par}</span>
+          ))}
         </div>
+      </section>
 
-        <div className="image--2">
-          <Image
-            src="/images/me2.jpg"
-            alt="фото"
-            style={{ objectPosition: "top" }}
-          />
-        </div>
+      <section className="process">
+        <h2>{process.title}</h2>
+        <div className="process-text">{process.text}</div>
       </section>
       <section className="approach">
         <h2>{approach.title}</h2>
 
-        <p className="par">
-          {approach.content.map((item: any, i: number) => (
-            <span key={i}>{item}</span>
-          ))}
-        </p>
-      </section>
-      <section className="process">
-        <h2>{process.title}</h2>
-        <div className="process-text">
-          {process.text.map((par: any) => (
-            <div className="services-text-block" key={par}>
-              <h3>{par.title}</h3>
-              <p>
-                {par.content.map((item: any) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </p>
-            </div>
-          ))}
-        </div>
+        <p className="par">{approach.text}</p>
       </section>
 
       <div className="table container">

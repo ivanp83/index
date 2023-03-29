@@ -45,6 +45,19 @@
               },
               {
                 "id": 2,
+                "title": "Matryoshka",
+                "description": "Telegram bot",
+                "sub": "Identity, UI/UX, development",
+                "banner": "/images/matryoshka/ban.jpg",
+                "text": "Juliana loves flowers, comfort and beaut. Since childhood, she has been picking flowers in the field, on the way somewhere, at the dacha, etc. Now she is successfully running a business for the manufacture and sale of magnificent bouquets.",
+                "url": "https://t.me/mat32348232_bot",
+                "date": "2023",
+                "video": {
+                  "mp4": "/images/matryoshka/1.mp4"
+                }
+              },
+              {
+                "id": 3,
                 "title": "Lora Brovko",
                 "description": "Site for famous fashion designer",
                 "sub": "Identity, UI/UX, site development",
@@ -59,7 +72,7 @@
               },
 
               {
-                "id": 3,
+                "id": 4,
                 "title": "Rost Foods",
                 "description": "Site for production company",
                 "sub": "Identity, UI/UX, site development",
@@ -119,6 +132,19 @@
               },
               {
                 "id": 2,
+                "title": "Матрёшка",
+                "description": "Телеграм магазин по продаже цветов онлайн",
+                "sub": "Айдентика, UI/UX, разработка сайта",
+                "banner": "/images/matryoshka/ban.jpg",
+                "text": "Юлиана очень любит цветы, уют и красоту вокруг. Я с детства она собирала цветы в поле, по дороге куда-либо, на даче и т.д. Сейчас она успешно ведёт бизнес по изготовлению и продаже велиолепных букетов на заказ.",
+                "url": "https://t.me/mat32348232_bot",
+                "date": "2023",
+                "video": {
+                  "mp4": "/images/matryoshka/1.mp4"
+                }
+              },
+              {
+                "id": 3,
                 "title": "Лора Бровко",
                 "description": "Сайт для дизайнера одежды",
                 "sub": "Айдентика, UI/UX, разработка сайта",
@@ -132,7 +158,7 @@
               },
 
               {
-                "id": 3,
+                "id": 4,
                 "title": "Рост Фудс",
                 "description": "Cайт для производственной компании",
                 "sub": "Айдентика, UI/UX, разработка сайта",
@@ -162,47 +188,22 @@
         "about": {
           "title": "Information",
           "image": "/images/me.jpg",
-          "text": "There is no problem to create an application, but there is a problem to do it for a fair price. IT products should be available for a small business. It is a matter of survival in the modern digital world. I can help you out. Many years of experience in the industry has given me all the appropriate knowledge. Working for myself, I don't have to share profits and think about building internal processes within the company, this allows me to be as focused as it's possible on solving particular tasks and release studio-quality projects for an adequate budget."
+          "text": "Today there is no problem to create an application or service, but there is a problem to do it cheaply. Large IT companies are forced to service huge expenses for staff and support, hence the high price for the customer. I am sure IT products should be available to any kin of  business, it is a matter of survival in the modern digital world. But it is not necessary to involve a famous brand company to develop ordinary solutions. I can help with that. I don't need to share profits or think about building complex and expensive processes within the company, because I work for myself. I am as focused as possible on solving a specific task at one point, many years of experience in the industry has given me all the necessary knowledge. This allows me to produce studio-quality projects for an adequate budget."
         },
         "approach": {
           "title": "Approach",
-          "content": [
-            "Being a multidisciplinary specialist, I'm working at the intersection of design and technology and am committed to a strategic approach when creating solutions. The strength of any design system cannot exceed  it's individual elements. I strive to create simple and elegant solutions that are sustainable in today's changing reality. I consider it my duty to educate and inspire clients,  give the opportunity to learn the principles of interaction with the digital world themselves."
-          ]
+          "text": "I work at the intersection of different technologies and strive to create simple and stable solutions that are sustainable in an ever-changing environment. I consider it my duty to educate and inspire clients, to give them the opportunity to learn the principles of interaction with the digital world themselves."
         },
         "services": {
-          "title": "Services",
+          "title": "Servicess",
           "text": [
-            {
-              "title": "Digital design",
-              "content": [
-                "Digital design brings the brand and its visual identity to life on digital platforms. It is the creative science of combining aesthetics, service design and technology, which promotes valuable interaction between the brand and the user. This area is constantly changing and always fascinating. My digital design services include information architecture, wireframe framing, user experience, user interface, visual design and prototyping."
-              ]
-            },
-            {
-              "title": "Development",
-              "content": [
-                "Development is the use of advanced technologies to create elegant tools for communication or business service. Developing innovative solutions to solve problems that cannot be solved with standard measures. My experience in development is extensive and can be applied to most tasks. I work with prototyping, complex animation and graphics, application development, development of tools and services, and so on..."
-              ]
-            }
+            "Digital design -  brings a brand and its visual identity to life. It is a  creative science of combining aesthetics, design, services and technology, which promotes valuable interaction between the brand and user. My digital design services include information architecture, UI/UX, visual design and prototyping.",
+            "Development- art of advanced technologies to create elegant tools for communication or business service. My experience in development is extensive and can be applied to most of the tasks. I work with prototyping, complex animation and graphics, application development, development of tools and services, and so on..."
           ]
         },
         "process": {
           "title": "Way I work",
-          "text": [
-            {
-              "title": "IT outsourcing",
-              "content": [
-                "I'm always ready to consider an offer from third-party companies to work in a team. We can determine the time for the interview to compare our goals and opportunities for cooperation."
-              ]
-            },
-            {
-              "title": "Freelance",
-              "content": [
-                "As an independent developer I have all necessary stack, I can do small projects alone or along with a team."
-              ]
-            }
-          ]
+          "text": "I have all the necessary practical skills and can design and build a medium-sized project alone. I am always ready to consider an offer from third-party companies to work in a team. We can determine the time for the interview to compare our goals and opportunities for cooperation."
         },
         "dev": {
           "front": [
@@ -223,47 +224,22 @@
         "about": {
           "title": "Информация",
           "image": "/images/me.jpg",
-          "text": "Сегодня нет проблемы создать приложение, но есть проблема сделать не дорого.  Хорошие IT продукты должны быть доступны для небольшого бизнеса, это вопрос его существования в современном цифровом мире. Я могу с этим помочь. Многолетний опыт работы в индустрии дал мне все необходимые знания. Работая на себя, мне не надо делиться прибылью и думать о построении процессов внутри компании, это позволяет быть максимально сконцентрированным над решением конкретных задач и выпускать проекты студийного качества за адекватный бюджет."
+          "text": "Сегодня нет проблемы создать приложение или сервис, но есть проблема сделать это дёшево.  Крупные IT компании вынуждены обслуживать большие расходы на оплату персонала и поддержание жизнедеятельности, отсюда и высокая цена для заказчика. Я уверен, что IT продукты должны быть доступны для любого бизнеса, это вопрос его выживания в современном цифровом мире. Но вовсе не обязательно привлекать именитую фирму для разработки рядовых решений. Я могу с этим помочь. Мне не надо делиться прибылью или думать о построении сложных и дорогих процессов внутри компании, ведь я работаю сам на себя. Я максимально сконцентрирован над решением конкретной задачи в один момент времени, многолетний опыт работы в индустрии дал мне все необходимые знания. Это позволяет выпускать для вас проекты студийного качества за адекватный бюджет."
         },
         "approach": {
           "title": "Подход",
-          "content": [
-            "Будучи многопрофильным специалистом, я работаю на стыке разных технологий и стремлюсь создавать простые решения, устойчивые в постоянно меняющейся реальности.  Считаю своим долгом обучать и вдохновлять клиентов, давать возможность самим научиться принципам взаимодейсвия с цифорвым миром."
-          ]
+          "text": "Я работаю на стыке разных технологий и стремлюсь создавать простые и стабильные решения, устойчивые в постоянно меняющемся окружении.  Считаю своим долгом обучать и вдохновлять клиентов, давать возможность самим научиться принципам взаимодейсвия с цифорвым миром."
         },
         "services": {
           "title": "Сервисы",
           "text": [
-            {
-              "title": "Цифровой дизайн",
-              "content": [
-                "Цифровой дизайн должен представлять бренд и его визуальную идентичность в жизнь на цифровых платформах. Это творческая наука о сочетании эстетики, дизайна услуг и технологий, которая способствует ценному взаимодействию между брендом и пользователем. Эта область постоянно меняется и всегда увлекательна. Мои услуги по цифровому дизайну включают информационную архитектуру,  UI/UX, визуальный дизайн и прототипирование."
-              ]
-            },
-            {
-              "title": "Разработка",
-              "content": [
-                "Разработка - это использование передовых технологий для создания элегантных инструментов для общения или обслуживания бизнеса. Это разработка инновационных решений проблем, которые невозможно решить с помощью стандартных мер. Мой опыт в области разработки обширен и может быть применим для большинства задачь. Я работаю с прототипированием, сложной анимацией и графикой, разработкой приложений, разработкой инструментов и сервисов и так далее..."
-              ]
-            }
+            "Цифровой дизайн - это то, что представляет бренд и его визуальную идентичность в жизнь. Это творческая наука о сочетании эстетики, дизайна, услуг и технологий, которая способствует ценному взаимодействию между брендом и пользователем. Мои услуги по цифровому дизайну включают информационную архитектуру,  UI/UX, визуальный дизайн и прототипирование.",
+            "Разработка - это использование передовых технологий для создания элегантных инструментов для общения или обслуживания бизнеса. Это разработка инновационных решений проблем, которые невозможно решить с помощью стандартных мер. Мой опыт в области разработки обширен и может быть применим для большинства задачь. Я работаю с прототипированием, сложной анимацией и графикой, разработкой приложений, разработкой инструментов и сервисов и так далее..."
           ]
         },
         "process": {
           "title": "Как я работаю",
-          "text": [
-            {
-              "title": "IT аутсорс",
-              "content": [
-                "Всегда готов рассмотреть предложение от сторонних компаний по работе в команде. Мы можем определить время для интервью, чтобы сверить наши цели и возможности  для сотрудничества."
-              ]
-            },
-            {
-              "title": "Freelance",
-              "content": [
-                "Как независимый разработчик, владеющий необходимым стеком, я могу делать небольшие проекты в одиночку, либо вместе с командой."
-              ]
-            }
-          ]
+          "text": "Я владею всем необходимым стеком и могу спроектировать и построить среднего по своему масштабу проект в одиночку. Всегда готов рассмотреть предложение от сторонних компаний по работе в команде. Мы можем определить время для интервью, чтобы сверить наши цели и возможности  для сотрудничества."
         },
         "dev": {
           "front": [

@@ -12,7 +12,7 @@ const IDo: FC<Props> = ({ ido }) => {
           grid-column: 3/9;
         }
         h2 {
-          margin-bottom: var(--space-small);
+          margin-bottom: 1rem;
         }
         .ido span {
           display: block;

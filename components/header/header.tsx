@@ -25,8 +25,8 @@ const Header: React.FC = () => {
           grid-column-gap: var(--space-small);
         }
         .logo {
-          grid-column: 1/5;
-          font-family: "GolosTextBold", sans-serif;
+          grid-column: 1/6;
+          font-weight: 700;
         }
         nav {
           grid-column: 6/8;

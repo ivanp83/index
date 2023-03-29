@@ -72,4 +72,12 @@ export default css.global`
       --container-width: 100%;
     }
   }
+  @media all and (max-width: 960px) and (orientation: landscape) {
+    html {
+      font-size: 100%;
+    }
+    :root {
+      --container-width: 100vw;
+    }
+  }
 `;

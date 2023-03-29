@@ -19,9 +19,12 @@ const ProjectItem: FC<Props> = ({ project }) => {
       <style jsx>{`
         li {
           overflow: hidden;
-          padding-top: var(--space-small);
+          padding-top: 1rem;
           border-bottom: 1px solid gray;
           display: grid;
+        }
+        li:nth-of-type(2) .video {
+          grid-column: 3/6;
         }
         .heading {
           background-color: var(--main-light);
@@ -51,7 +54,6 @@ const ProjectItem: FC<Props> = ({ project }) => {
 
         .video {
           grid-column: 1/9;
-
           width: 100%;
           object-fit: cover;
         }
@@ -62,7 +64,7 @@ const ProjectItem: FC<Props> = ({ project }) => {
         }
         .link {
           grid-column: 1/9;
-          margin-bottom: var(--space-small);
+          margin-bottom: 1rem;
           text-decoration: underline;
           margin-top: auto;
           margin-bottom: 5rem;
@@ -74,6 +76,10 @@ const ProjectItem: FC<Props> = ({ project }) => {
           }
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
+          li:nth-of-type(2) .video {
+            grid-column: 2/8;
+            height: auto;
+          }
           .date {
             display: none;
           }
@@ -91,9 +97,9 @@ const ProjectItem: FC<Props> = ({ project }) => {
       <div className="content">
         <video
           className="video"
-          preload="yes"
           autoPlay
           loop
+          playsInline
           muted
           poster={project.banner}
         >

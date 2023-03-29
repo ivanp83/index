@@ -15,7 +15,7 @@ const Contacts: FC<Props> = ({ contacts }) => {
           text-decoration: underline;
         }
         h2 {
-          margin-bottom: var(--space-small);
+          margin-bottom: 1rem;
         }
         @media all and (max-width: 600px) and (orientation: portrait) {
           .contacts {
