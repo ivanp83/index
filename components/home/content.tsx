@@ -32,7 +32,7 @@ const Content: React.FC<IndexProps> = ({ content }) => {
             grid-row-gap: var(--space-med);
           }
           h1 {
-            grid-column: 1/5;
+            grid-column: 1/8;
             margin-top: 4rem;
           }
         }
