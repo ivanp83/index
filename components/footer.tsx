@@ -21,7 +21,7 @@ export default function Footer() {
       `}</style>
       <div className="social">
         <a
-          href={`mailto:appdeveloper@internet.ru}`}
+          href={`mailto:ivan.pozdnyakov83@yandex.ru`}
           target="_blank"
           rel="noopener noreferrer"
         >
