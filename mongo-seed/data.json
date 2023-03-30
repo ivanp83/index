@@ -4,11 +4,11 @@
     "data": {
       "en": {
         "seo": {
-          "title": "Ivan Pozdnyakov Full-Stack developer NodeJS, ReactJS",
+          "title": "Web Apps Developer",
           "description": "I strive for simple solutions to complex projects. My work is based on research, successful global experience in the IT industry and a deep understanding of my role as an architect."
         },
         "content": {
-          "title": "Full-Stack developer NodeJS, ReactJS",
+          "title": "Websites and apps for affordable price",
           "contacts": {
             "title": "Contacts",
             "email": "appdeveloper@internet.ru",
@@ -92,11 +92,11 @@
       },
       "ru": {
         "seo": {
-          "title": "Иван Поздняков Full-Stack разрабочик NodeJS, ReactJS",
+          "title": "Разработка сайтов и приложений",
           "description": "Я стремлюсь к простым решениям сложных задачь насколько это вохможно. Моя работа основана на исследованиях, успешном мировом опыте IT индустрии и глубоком понимании своей роли как архитектора."
         },
         "content": {
-          "title": "Full-Stack разрабочик NodeJS, ReactJS",
+          "title": "Делаю сайты и приложения студиного качества по доступной цене",
           "contacts": {
             "title": "Контакты",
             "email": "appdeveloper@internet.ru",
@@ -104,7 +104,7 @@
             "viber": "79527900015"
           },
           "ido": {
-            "title": "Я делаю",
+            "title": "Мои услуги",
             "data": [
               "Интеренет магазины",
               "Корпоративные сайты",
@@ -135,8 +135,8 @@
               {
                 "id": 2,
                 "title": "Матрёшка",
-                "description": "Телеграм магазин по продаже цветов онлайн",
-                "sub": "Айдентика, UI/UX, разработка сайта",
+                "description": "Магазин в Telegram по продаже цветов",
+                "sub": "Айдентика, UI/UX, разработка Telegram бота",
                 "banner": "/images/matryoshka/ban.jpg",
                 "text": "Юлиана очень любит цветы, уют и красоту вокруг себя. С детства она собирала цветы в поле, по дороге куда-либо, на даче и т.д. Сейчас она успешно ведёт бизнес по изготовлению и продаже велиолепных букетов на заказ.",
                 "url": "https://t.me/mat32348232_bot",
@@ -241,7 +241,7 @@
         },
         "process": {
           "title": "Как я работаю",
-          "text": "Я владею всем необходимым стеком и могу спроектировать и построить среднего по своему масштабу проект в одиночку. Всегда готов рассмотреть предложение от сторонних компаний по работе в команде. Мы можем определить время для интервью, чтобы сверить наши цели и возможности  для сотрудничества."
+          "text": "Я владею всем необходимым стеком и могу спроектировать и построить решение для большинства задач. Всегда готов рассмотреть предложение от сторонних компаний по работе в команде. Мы можем определить время для интервью, чтобы сверить наши цели и возможности  для сотрудничества."
         },
         "dev": {
           "front": [

@@ -42,14 +42,6 @@ const Content: React.FC<PageProps> = ({
   services,
   dev,
 }) => {
-  const renderText = (data: any) => (
-    <p className="par">
-      {data.map((item: any, i: number) => (
-        <span key={i}>{item}</span>
-      ))}
-    </p>
-  );
-
   return (
     <article className="about container">
       <style jsx>{`
@@ -89,17 +81,18 @@ const Content: React.FC<PageProps> = ({
           grid-row: 2;
         }
 
-        .services,
+        .approach,
         .process,
-        .approach {
+        .services {
           grid-column: 3/9;
           display: grid;
           grid-row-gap: 1rem;
           grid-auto-flow: row;
         }
-        .services-text,
+
         .approach-text,
-        .process-text {
+        .process-text,
+        .services-text {
           display: grid;
           grid-row-gap: 1rem;
         }
@@ -172,6 +165,14 @@ const Content: React.FC<PageProps> = ({
         </div>
       </div>
 
+      <section className="approach">
+        <h2>{approach.title}</h2>
+        <span>{approach.text}</span>
+      </section>
+      <section className="process">
+        <h2>{process.title}</h2>
+        <div className="process-text">{process.text}</div>
+      </section>
       <section className="services">
         <h2>{services.title}</h2>
         <div className="services-text">
@@ -180,17 +181,6 @@ const Content: React.FC<PageProps> = ({
           ))}
         </div>
       </section>
-
-      <section className="process">
-        <h2>{process.title}</h2>
-        <div className="process-text">{process.text}</div>
-      </section>
-      <section className="approach">
-        <h2>{approach.title}</h2>
-
-        <span className="par">{approach.text}</span>
-      </section>
-
       <div className="table container">
         <div className="front">
           <h3>Frontend</h3>
