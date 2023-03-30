@@ -35,9 +35,6 @@ const Header: React.FC = () => {
           margin: 0 auto;
           color: var(--main-dark);
         }
-        .nav-link-text {
-          font-size: 16px;
-        }
       `}</style>
       <span className="logo">
         {router.locale === "en" ? "Ivan Pozdnyakov" : "Иван Поздняков"}
@@ -45,11 +42,11 @@ const Header: React.FC = () => {
       <nav>
         {router.pathname.includes("about") ? (
           <Link href="/">
-            <span>{router.locale === "en" ? "Index" : "Главная"}</span>
+            <span>Index</span>
           </Link>
         ) : (
           <Link href="/about">
-            <span className="nav-link-text">About</span>
+            <span>About</span>
           </Link>
         )}
       </nav>
