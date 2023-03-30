@@ -4,19 +4,19 @@
     "data": {
       "en": {
         "seo": {
-          "title": "Web Apps Developer",
-          "description": "I strive for simple solutions to complex projects. My work is based on research, successful global experience in the IT industry and a deep understanding of my role as an architect."
+          "title": "Web, Apps, Telegram Bots Developer",
+          "description": "I strive for as simple solutions as possible. Ordering website or a Telegram bot creation from me, you are guaranteed to receive the highest quality application at the best price."
         },
         "content": {
-          "title": "Websites and apps for affordable price",
+          "title": "Websites, bots and apps for affordable price",
           "contacts": {
             "title": "Contacts",
-            "email": "appdeveloper@internet.ru",
+            "email": "ivan.pozdnyakov83@yandex.ru",
             "telegram": "eachpw",
             "viber": "79527900015"
           },
           "ido": {
-            "title": "My business",
+            "title": "Services",
             "data": [
               "e-Commerce",
               "Corporate Websites",
@@ -92,19 +92,19 @@
       },
       "ru": {
         "seo": {
-          "title": "Разработка сайтов и приложений",
-          "description": "Я стремлюсь к простым решениям сложных задачь насколько это вохможно. Моя работа основана на исследованиях, успешном мировом опыте IT индустрии и глубоком понимании своей роли как архитектора."
+          "title": "Сайты, приложения, чат боты",
+          "description": "Я стремлюсь к простым решениям насколько это возможно.  Заказывая создание сайта или Теллеграм бота у меня вы гарантированно получите приложение самого высокого качества по оптимальной цене."
         },
         "content": {
           "title": "Делаю сайты и приложения студиного качества по доступной цене",
           "contacts": {
             "title": "Контакты",
-            "email": "appdeveloper@internet.ru",
+            "email": "ivan.pozdnyakov83@yandex.ru",
             "telegram": "eachpw",
             "viber": "79527900015"
           },
           "ido": {
-            "title": "Мои услуги",
+            "title": "Сервисы",
             "data": [
               "Интеренет магазины",
               "Корпоративные сайты",
@@ -197,7 +197,7 @@
           "text": "I work at the intersection of different technologies and strive to create simple and stable solutions that are sustainable in an ever-changing environment. I consider it my duty to educate and inspire clients, to give them the opportunity to learn the principles of interaction with the digital world themselves."
         },
         "services": {
-          "title": "Servicess",
+          "title": "Services",
           "text": [
             "Digital design -  brings a brand and its visual identity to life. It is a  creative science of combining aesthetics, design, services and technology, which promotes valuable interaction between the brand and user. My digital design services include information architecture, UI/UX, visual design and prototyping.",
             "Development- art of advanced technologies to create elegant tools for communication or business service. My experience in development is extensive and can be applied to most of the tasks. I work with prototyping, complex animation and graphics, application development, development of tools and services, and so on..."
